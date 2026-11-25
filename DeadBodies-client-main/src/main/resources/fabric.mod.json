@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "deadbodies",
+  "version": "1.0.0",
+  "name": "Dead Bodies",
+  "description": "Cuando muere un jugador, su cuerpo queda tirado unos segundos con su skin mas oscura. Solo del lado del cliente: funciona en cualquier servidor.",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.deadbodies.DeadBodiesClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "deadbodies.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
